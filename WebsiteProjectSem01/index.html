@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Merriweather&family=Montserrat&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="section1">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color:rgb(204, 125, 129); font-family: papyrus; font-size: 40px;"><strong>Mahamas <img src="8827073.png"></strong></a>
+          <button class="navbar-toggler" onclick="makeBold()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <centre>
+          <div class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: rgb(231, 83, 108)" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="whyus.html">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu1.html" id="menu1">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="location.html">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><img class="login-img" src="2601827.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><img class="login-img" src="Asset_21-64.webp"></a>
+              </li>
+            </ul>
+          </div>
+          </centre>
+        </div>
+      </nav>
+    </div>
+   <div class="header">
+      <p class="search" style="font-family: sacramento; color:black; font-size: 50px; font-weight: bolder;">Get your taste buds activated!</p>
+      <div class="order"><button  id="buyNow" onclick="buyNow2()" style="background-color: rgb(231, 83, 108); width: 150px;height:40px; border-radius: 12px">Place Your Order</button>
+      </div>
+   </div>
+   <div class="contentMain">
+    <p style="font-family: sacramento; color:white; font-size: 50px;"> We  are  serving  best  deserts  and  drinks  in  here !<img class="imgM" src="istockphoto-1183349785-612x612.jpg"></p>
+    <h1 style="color:rgb(231, 83, 108); font-family: century gothic;"><strong>  An appetite for life restaurant</strong></h1>
+    <div class="btn" style="padding-left: 200px; padding-top: 100px;">
+      <button style="background-color: rgb(231, 83, 108); border: none; font-size: 20px; border-radius: 8px; padding:10px"><img style="height:20px; width:20px"src="logo_brand_brands_logos_playstore_google-64.webp"><strong>Download</strong></button>
+      <button style="background-color: rgb(231, 83, 108); border: none; font-size: 20px; border-radius: 8px; padding:10px"><img style="height:20px; width:20px" src="225161.png"><strong>Download</strong></button>
+    </div>
+  </div>
+   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="img" src="1392237.png"  alt="..."><br><br>
+        <h3>I still miss last time when i tried Mahamas ..it was so awesome!!</h3>
+      </div>
+      <div class="carousel-item">
+        <img class="img" src="3386341.png" alt="...">
+        <br>
+        <br>
+        <h3>Mom!Dad! I wanna eat brownie of Mahamas.</h3>
+      </div>
+      <div class="carousel-item">
+        <img class="img" src="brain_thought_head_clever_creativity_intelligence_memory-64.webp"  alt="...">
+        <br><br>
+        <h3>Oh yes!I'm so love with their service.</h3>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p style="font-family:century gothic; color:white">Contact us on</p>
+    <p style="font-family: century gothic; font-size: 15px; color: pink">@mahamas_official <br><img class="soimg" src="3225191_app_instagram_logo_media_popular_icon.png" alt="">
+      <img class="soimg" src="317720_social media_tweet_twitter_social_icon.png" alt="">
+      <img class="soimg" src="1298738_facebook_brand_fb_logo_social media_icon.png" alt=""></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    const mytext = document.getElementById("buyNow");
+    const originaltext = mytext.innerHTML;
+    const newtext = "SignUp first";
+
+    mytext.addEventListener("click", function buyNow2() {
+     if (mytext.innerHTML === originaltext) {
+      mytext.innerHTML = newtext;
+     } else {
+      mytext.innerHTML = originaltext;
+     }
+   }); 
+  </script>
+</body>
+</html>
